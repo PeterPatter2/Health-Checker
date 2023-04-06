@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: #54BFDB;
+}
+.container1 {
+  margin: 20px auto;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  font-size: 4vh;
+  font-weight: 500;
+  position: relative;
+  font-family:'Itim', cursive;
+}
+.title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #79C4F2);
+}
+.user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 2.3vh;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family:'Itim', cursive;
+}
+.head-input{
+  font-family:'Itim', cursive;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 2.5vh;
+}
+.input-box input:focus,.input-box input:valid{
+  border-color: #79E6F2;
+}
+.gender-details{
+  margin-bottom: 15px;
+}
+.gender-details .gender-title{
+  font-size: 2.5vh;
+  font-weight: 500;
+  font-family:'Itim', cursive;
+ }
+ .gender{
+  font-family:'Itim', cursive;
+  font-size: 2.4vh;
+ }
+.category{
+  display: flex;
+  width: 80%;
+  margin: 14px 5.5vh ;
+  justify-content: center;
+}
+.category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center; /* Add this line to center the dot horizontally */
+  }
+  .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin: 0 10px; /* Add this line to add spacing between the dots */
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+  }
+#male:checked ~ .category label .one,
+#female:checked ~ .category label .two,
+#yes:checked ~ .category label .three,
+#no:checked ~ .category label .four{
+  background: #000000;
+  border-color: #d9d9d9;
+}
+form input[type="radio"]{
+  display: none;
+}
+.button{
+  height: 45px;
+  margin: 35px 0
+}
+.button input{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: green;
+}
+.button input:hover{
+  transform: scale(0.99);
+  opacity: 0.8;
+  }
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #54BFDB;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #54BFDB;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.dropdownItem{
+  margin-left: 4vh;
+  margin-bottom: 15px;
+}
+.select-btn{
+    font-family:'Itim', cursive;
+    font-size: 2.3vh;
+    display: flex;
+    height: 50px;
+    background: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.options{
+  font-family:'Itim', cursive;
+  font-size: 2.2vh;
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+.smoke{
+  margin-bottom: 15px;
+  margin-left: 20%;
+}

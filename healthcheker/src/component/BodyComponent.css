@@ -1,0 +1,174 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  max-height: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -25px;
+}
+
+/* Make the image responsive */
+.container img {
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  max-height: 1300px;
+  height: 100%;
+  margin-top: 40px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Itim', cursive;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+.btn2 {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Itim', cursive;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .btn:hover {
+  opacity: 0.8;
+}
+.container .btn2:hover {
+  opacity: 0.8;
+}
+.Image1{
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  max-height: 1300px;
+  height: 100%;
+}
+.Image2{
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  max-height: 1300px;
+  height: 100%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Image3{
+display: block;
+width: 100%;
+max-width: 1300px;
+max-height: 1300px;
+height: 100%;
+margin-top: 50px;
+margin-right: auto;
+margin-left: auto;
+}
+.text{
+position: relative;
+padding: 100px;
+background: #BFBFBF;
+margin-top: 10px;
+text-align: left;
+}
+.text h1 {
+font-family: 'Open Sans', sans-serif;
+font-size: 2.5rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 1rem;
+}
+
+.text p {
+font-family: 'Itim', cursive;
+font-size: 1.4rem;
+line-height: 1.5;
+color: #666;
+}
+section{
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body{
+overflow-x: hidden;
+min-height: 100vh;
+background: #54BFDB;
+}
+section h1{
+position: absolute;
+font-size: 8vw;
+text-align: center;
+line-height: 0.55em;
+transform: translateY(-50%);
+}
+section h2{
+position: absolute;
+font-size: 7vw;
+text-align: center;
+line-height: 0.55em;
+transform: translateY(100%);
+}
+section img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
+}
+.pe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
+}
+.doctor{
+padding-right: 75%;
+}
+section::before{
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top,#54BFDB,transparent);
+z-index: 10;
+}
+head{
+font-family: 'Open Sans', sans-serif;
+font-size: 2.5rem;
+font-weight: bold;
+color: #333;
+}

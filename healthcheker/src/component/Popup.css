@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.popup{
+    background: rgba(49,49,49,0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.inpopup-content{
+  font-size: 4vh;
+  margin: 20px auto;
+  margin-top: 6%;
+  max-width: 740px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family:'Itim', cursive;
+}
+.inpopup-contentDetail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.inpopup-contentBox{
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  font-size: 2.5vh;
+  font-weight: 300;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-family:'Itim', cursive;
+}
+.active, .inpopup-contentBox:hover {
+  background-color: #ccc;
+  transform: scale(0.99);
+}
+.inpopup-contentBox:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel{
+  text-align: left;
+  padding: 0 18px;
+  background-color: white;
+  font-size: 2.5vh;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 5px;
+  font-family:'Itim', cursive;
+}
+.panel a{
+  font-family:'Itim', cursive;
+}
+.button{
+    height: 45px;
+    margin: 35px 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: green;
+}
+
+.button:hover{
+  transform: scale(0.99);
+  opacity: 0.8;
+}
+.popup-content{
+  overflow-y: scroll;
+  max-height: 100vh;
+}
